@@ -1,0 +1,51 @@
+
+.cardBack {
+    border-radius: 12px;
+    padding: 24px 24px 0 24px;
+    background-color:hsl(211, 20%, 27%);
+    width: 375px;
+    color:hsl(193, 38%, 86%);
+    font-size: 28px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content:center;
+}
+
+.advice{
+    margin-top: 14px;
+}
+.advice h2 {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.divider img {
+    color: hsl(193, 38%, 86%)
+}
+.btnContainer {
+    
+}
+.btnDice {
+    position: relative;
+    top: 30px;
+    z-index: 10;
+    width: 100vh;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    background: hsl(150, 100%, 66%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
