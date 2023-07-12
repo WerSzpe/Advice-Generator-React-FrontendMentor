@@ -39,11 +39,14 @@ export default function AdviceCard() {
             <div className={styles.divider}>
                 <img src={DividerMobile} alt='divider'/>
             </div>
+
+            
             <div className={styles.btnContainer}>
             <button className={styles.btnDice} onClick={fetchAdvice}>
                 <img src={IconDice} alt='dice'/>
             </button>
             </div>
+            
         </div>
         }
         </>
