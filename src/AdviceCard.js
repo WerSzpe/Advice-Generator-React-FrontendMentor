@@ -6,28 +6,25 @@ import IconDice from './images/icon-dice.svg';
 
 export default function AdviceCard() {
 
-    const [data, setData] = React.useState("example");
+    const [data, setData] = React.useState({ id: 0, advice: 'Click the button to get an advice!' });
+    const url = "https://api.adviceslip.com/advice";
    
-    const url = 'https://api.adviceslip.com/advice';
-    const fetchAdvice = () => {
-        fetch(url)
-            .then(response => { return response.json() })
-            .then(newData  => {setData({ id: newData.slip.id, advice: newData.slip.advice }); })
-            
-    };
-
-    React.useEffect(() => {
-        fetchAdvice();
-    }, [])
-
-    const handleClick = async () => {
+    const fetchAdvice = async () => {
         try {
-            const fetchData = await fetch(url);
-            const newData = await fetchData.json();
-            console.log(newData)
-            setData({ id: newData.slip.id, advice: newData.slip.advice });
+
+            
+
+            const response = await fetch(url);
+            if(!response.ok) {
+                throw new Error('Request failed');
+            }
+            const data = await response.json();
+            setData({
+                id:data.slip.id,
+                advice: data.slip.advice
+            })
         } catch (error) {
-            console.log(error)
+            console.error(error);
         }
     }
     
@@ -43,7 +40,7 @@ export default function AdviceCard() {
                 <img src={DividerMobile} alt='divider'/>
             </div>
             <div className={styles.btnContainer}>
-            <button className={styles.btnDice} onClick={handleClick}>
+            <button className={styles.btnDice} onClick={fetchAdvice}>
                 <img src={IconDice} alt='dice'/>
             </button>
             </div>
