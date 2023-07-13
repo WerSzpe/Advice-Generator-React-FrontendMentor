@@ -11,10 +11,7 @@ export default function AdviceCard() {
    
     const fetchAdvice = async () => {
         try {
-
-            
-
-            const response = await fetch(url);
+            const response = await fetch(url, {cache: "no-cache"});
             if(!response.ok) {
                 throw new Error('Request failed');
             }
@@ -27,6 +24,14 @@ export default function AdviceCard() {
             console.error(error);
         }
     }
+
+    const handleClick = () => {
+        fetchAdvice();
+    }
+
+    React.useEffect(() => {
+        fetchAdvice();
+    }, [])
     
     return (
         <>
@@ -42,7 +47,7 @@ export default function AdviceCard() {
 
             
             <div className={styles.btnContainer}>
-            <button className={styles.btnDice} onClick={fetchAdvice}>
+            <button className={styles.btnDice} onClick={handleClick}>
                 <img src={IconDice} alt='dice'/>
             </button>
             </div>
