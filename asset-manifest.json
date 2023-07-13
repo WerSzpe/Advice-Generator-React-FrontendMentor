@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Advice-Generator-React-FrontendMentor/static/css/main.8da5750a.css",
+    "main.js": "/Advice-Generator-React-FrontendMentor/static/js/main.ff8048a2.js",
+    "static/js/787.fe2905bd.chunk.js": "/Advice-Generator-React-FrontendMentor/static/js/787.fe2905bd.chunk.js",
+    "static/media/Manrope-ExtraBold.ttf": "/Advice-Generator-React-FrontendMentor/static/media/Manrope-ExtraBold.5b0ae7100ad1d12e53c9.ttf",
+    "index.html": "/Advice-Generator-React-FrontendMentor/index.html",
+    "static/media/icon-dice.svg": "/Advice-Generator-React-FrontendMentor/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
+    "static/media/PatternDividerMobile.svg": "/Advice-Generator-React-FrontendMentor/static/media/PatternDividerMobile.aca38726412164df099c43d4f2fed72e.svg",
+    "main.8da5750a.css.map": "/Advice-Generator-React-FrontendMentor/static/css/main.8da5750a.css.map",
+    "main.ff8048a2.js.map": "/Advice-Generator-React-FrontendMentor/static/js/main.ff8048a2.js.map",
+    "787.fe2905bd.chunk.js.map": "/Advice-Generator-React-FrontendMentor/static/js/787.fe2905bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8da5750a.css",
+    "static/js/main.ff8048a2.js"
+  ]
+}
